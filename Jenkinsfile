@@ -12,7 +12,7 @@ pipeline {
        stage('Dependencies') {
            steps {
                bat 'npm i'
-               bat 'npm cypress install'
+               bat 'npm install cypress --save-dev'
            }
        }
        stage('Test 1') {
