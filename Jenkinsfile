@@ -11,7 +11,7 @@ pipeline {
    stages {
        stage('Dependencies') {
            steps {
-               sh 'npm i'
+               echo "this is where npm i would be ran"
            }
        }
        stage('Test 1') {
