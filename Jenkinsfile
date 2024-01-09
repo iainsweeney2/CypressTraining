@@ -15,10 +15,10 @@ pipeline {
                bat 'npm install cypress --save-dev'
            }
        }
-       stage('Test 1') {
+       stage('Run Tests') {
                   steps {
                 bat 'npm run cy:run'
                   }
                }
-}
+    }
 }
